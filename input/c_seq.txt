@@ -1,0 +1,26 @@
+const m = 7, n = 8;  
+var x,y,z,q,r;
+procedure mult;
+	var a,b;
+	begin
+		a := x;
+		b := y;
+		z := a*b;
+		write z
+	end;
+procedure sub;
+	var c,d;
+	begin
+		c := x+4;
+		d := y+6;
+		call mult;
+		q := z - c - d;
+		write q
+	end	
+begin
+  x := m;
+  y := n;
+  call sub;
+  r := z*q;
+  write r
+end.

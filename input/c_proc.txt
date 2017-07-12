@@ -1,0 +1,24 @@
+const m = 7, n = 85; 
+var x,y;/*varibles*/
+procedure sum;
+	var a,b;
+	begin
+		a := m*3; /*a = 21*/
+		write a;
+		b := n/2; /*b = 42*/
+		write b;
+		if y < a then
+			begin
+				x := y+b
+			end
+		else
+			begin
+				x:=x*b+y
+			end;
+	end;
+begin
+	x := -1*(-1);
+	read y;
+	call sum;
+	write x;
+end.

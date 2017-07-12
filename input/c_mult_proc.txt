@@ -1,0 +1,92 @@
+const m = 7, n = 85;  
+var  i,x,y,z,q,r;  
+procedure mult1; 
+  var a, b;  
+  begin 
+     a := x;  b := y; z := 0;
+  end;
+
+
+procedure mult2; 
+  var a, b;
+  procedure mult21;
+	var a, b;
+	procedure mult211;
+		const m = 7, n = 85;
+		var a, b;  
+		begin 
+			a := x;  b := y; z := 0;
+		end;
+	begin 
+		a := x;  b := y; z := 0;
+	end;
+  begin 
+     a := x;  b := y; z := 0;
+  end;
+ 
+procedure mult3; 
+  var a, b;  
+  begin 
+     a := x;  b := y; z := 0;
+  end;
+  
+procedure mult4; 
+  var a, b;  
+  begin 
+     a := x;  b := y; z := 0;
+  end;
+ 
+procedure mult5; 
+  var a, b;  
+  begin 
+     a := x;  b := y; z := 0;
+  end;
+ 
+procedure divide;
+	var w;
+	procedure sumadd;
+		var xx;
+		begin
+			w := xx + 1;
+		end;
+	begin
+	  r := x;
+	  q := 0;
+	  w := y;
+	  while w <= r do w := 2 * w;
+	  while w > y do
+	  begin
+		q := 2 * q;
+		w := w / 2;
+		if w <= r then
+		begin
+		  r := r - w;
+		  q := q + 1
+		end;
+	  end
+	end;
+
+procedure gcd;
+	var f, g;
+	procedure sub2;
+		var subx;
+		begin
+			f := subx + g;
+		end;
+	begin
+	  f := x;
+	  g := y;
+	  while f <= g do 
+	  begin
+		if f < g then g := g - f;
+		if g < f then f := f - g
+	  end;
+	  z := f
+	end;
+
+begin
+  x := m;
+  y := n;
+  call mult1;
+  call gcd
+end.
